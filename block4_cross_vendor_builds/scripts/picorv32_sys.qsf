@@ -1,0 +1,30 @@
+# External Quartus project (OUTSIDE the cloned repo; references repo sources
+# unchanged by absolute path). Board-less full compile of PicoRV32's own
+# repo-defined `system` top (system.v + picorv32.v) with the repo's SDC.
+# Device retargeted Cyclone IV (ep4ce40, repo default) -> Cyclone 10 GX,
+# because the installed Quartus is Prime Pro 26.1 (no Cyclone IV support);
+# same family as the paper's controlled Block-2 build. Documented caveat.
+set_global_assignment -name FAMILY "Cyclone 10 GX"
+set_global_assignment -name DEVICE 10CX220YU484E5G
+set_global_assignment -name TOP_LEVEL_ENTITY system
+set_global_assignment -name VERILOG_FILE REPO_ROOT/block4_builds/picorv32/scripts/quartus/system.v
+set_global_assignment -name VERILOG_FILE REPO_ROOT/block4_builds/picorv32/picorv32.v
+set_global_assignment -name SDC_FILE REPO_ROOT/block4_builds/picorv32/scripts/quartus/synth_system.sdc
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name LAST_QUARTUS_VERSION "26.1.0 Pro Edition"
+
+# Board-less pin completion (no physical target): default I/O standard + virtual
+# pins on user I/O so the Assembler can emit a programming file (.sof).
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "1.8 V"
+set_instance_assignment -name VIRTUAL_PIN ON -to clk
+set_instance_assignment -name VIRTUAL_PIN ON -to resetn
+set_instance_assignment -name VIRTUAL_PIN ON -to trap
+set_instance_assignment -name VIRTUAL_PIN ON -to out_byte_en
+set_instance_assignment -name VIRTUAL_PIN ON -to {out_byte[0]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {out_byte[1]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {out_byte[2]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {out_byte[3]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {out_byte[4]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {out_byte[5]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {out_byte[6]}
+set_instance_assignment -name VIRTUAL_PIN ON -to {out_byte[7]}

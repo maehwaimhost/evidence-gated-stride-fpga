@@ -1,0 +1,4 @@
+vendor,tool_path,tool_version,run_date_utc
+"AMD Vivado","vivado.bat","vivado v2025.2 (64-bit) | Tool Version Limit: 2025.11 | SW Build 6299465 on Fri Nov 14 19:35:11 GMT 2025 | IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025","2026-06-12T04:49:18.2181802Z"
+"Intel Quartus Prime Pro","quartus_sh.exe","Quartus Prime Shell | Version 26.1.0 Build 110 03/26/2026 SC Pro Edition","2026-06-12T04:49:18.2493964Z"
+"Microchip Libero SoC","libero.exe","Microchip Libero SoC Software Version 2025.2.0.14","2026-06-12T04:49:18.2649974Z"

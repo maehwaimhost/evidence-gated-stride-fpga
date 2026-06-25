@@ -1,0 +1,3 @@
+variant_id,perturbation_type,changed_artifacts,affected_stage,mapped_threat_ids,variant_path,run_started_utc,run_finished_utc,exit_code
+"hdl_revision","HDL revision","src\top.v;src\top_b.v","HDL/IP Input to downstream transformation","SIP-2;TRN-1;RPT-2","REPO_ROOT\cross_vendor_variant_runtime\hdl_revision","2026-06-12T04:49:29.4994745Z","2026-06-12T05:04:03.2462394Z","0"
+"constraint_revision","constraint revision","vivado\top.xdc;quartus\top.sdc;libero\top.sdc;vivado\top_b.xdc;quartus\top_b.sdc;libero\top_b.sdc","Constraint and Configuration to implementation/report stages","CFG-1;CFG-3;TRN-2;RPT-2","REPO_ROOT\cross_vendor_variant_runtime\constraint_revision","2026-06-12T05:04:03.3243979Z","2026-06-12T05:17:55.8243771Z","0"

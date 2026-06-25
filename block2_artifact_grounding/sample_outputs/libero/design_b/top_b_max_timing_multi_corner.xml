@@ -1,0 +1,2939 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<?xml-stylesheet href="rptstyle.xsl" type="text/xsl" ?>
+<doc>
+<title>Timing Multi Corner Report Max Delay Analysis
+</title>
+<text>SmartTime Version 2025.2.0.14</text>
+<text>Microchip Technology Inc. - Microchip Libero Software Release 2025.2 (Version 2025.2.0.14)</text>
+<text>Date: Fri Jun 12 13:47:05 2026
+</text>
+<table>
+<header>
+</header>
+<row>
+ <cell>Design</cell>
+ <cell>top_b</cell>
+</row>
+<row>
+ <cell>Family</cell>
+ <cell>PolarFire</cell>
+</row>
+<row>
+ <cell>Die</cell>
+ <cell>MPF100T</cell>
+</row>
+<row>
+ <cell>Package</cell>
+ <cell>FCG484</cell>
+</row>
+<row>
+ <cell>Temperature Range</cell>
+ <cell>0 - 100 C</cell>
+</row>
+<row>
+ <cell>Voltage Range</cell>
+ <cell>0.97 - 1.03 V</cell>
+</row>
+<row>
+ <cell>Speed Grade</cell>
+ <cell>-1</cell>
+</row>
+<row>
+ <cell>Design State</cell>
+ <cell>Post-Layout</cell>
+</row>
+<row>
+ <cell>Data source</cell>
+ <cell>Production</cell>
+</row>
+<row>
+ <cell>Multi Corner Report Operating Conditions</cell>
+ <cell>slow_lv_lt,fast_hv_lt,slow_lv_ht</cell>
+</row>
+</table>
+<text></text>
+<section>
+<name>Summary</name>
+<table>
+<header>
+ <cell>Clock Domain</cell>
+ <cell>Required Period (ns)</cell>
+ <cell>Required Frequency (MHz)</cell>
+ <cell>Worst Slack (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>clk_a</cell>
+ <cell>10.000</cell>
+ <cell>100.000</cell>
+ <cell>8.313</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>clk_b</cell>
+ <cell>7.000</cell>
+ <cell>142.857</cell>
+ <cell>5.077</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+<text></text>
+<table>
+<header>
+ <cell></cell>
+ <cell>Worst Slack (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Input to Output</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+</table>
+</section>
+<section>
+<name>Clock Domain clk_a</name>
+<text></text>
+<section>
+<name>SET Register to Register</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Setup (ns)</cell>
+ <cell>Minimum Period (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>u_fifo/full_r:CLK</cell>
+ <cell>u_fifo/full_r:D</cell>
+ <cell>1.687</cell>
+ <cell>8.313</cell>
+ <cell>5.117</cell>
+ <cell>13.430</cell>
+ <cell>0.000</cell>
+ <cell>1.687</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>u_fifo/wptr_bin[1]:CLK</cell>
+ <cell>u_fifo/full_r:D</cell>
+ <cell>1.552</cell>
+ <cell>8.409</cell>
+ <cell>4.709</cell>
+ <cell>13.118</cell>
+ <cell>0.000</cell>
+ <cell>1.591</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>u_fifo/wptr_bin[2]:CLK</cell>
+ <cell>u_fifo/full_r:D</cell>
+ <cell>1.550</cell>
+ <cell>8.412</cell>
+ <cell>4.975</cell>
+ <cell>13.387</cell>
+ <cell>0.000</cell>
+ <cell>1.588</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>u_fifo/wptr_bin[0]:CLK</cell>
+ <cell>u_fifo/full_r:D</cell>
+ <cell>1.529</cell>
+ <cell>8.432</cell>
+ <cell>4.955</cell>
+ <cell>13.387</cell>
+ <cell>0.000</cell>
+ <cell>1.568</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>u_fifo/full_r:CLK</cell>
+ <cell>u_fifo/wptr_gray[0]:D</cell>
+ <cell>1.200</cell>
+ <cell>8.663</cell>
+ <cell>4.630</cell>
+ <cell>13.293</cell>
+ <cell>0.000</cell>
+ <cell>1.337</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: u_fifo/full_r:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: u_fifo/full_r:D</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>13.430</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>5.117</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8.313</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_a</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_a</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_a_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>clk_a</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_a_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>1.322</cell>
+ <cell>1.322</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_IOBA:A</cell>
+ <cell>net</cell>
+ <cell>clk_a_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.407</cell>
+ <cell>1.729</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_IOBA:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.204</cell>
+ <cell>1.933</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2:A</cell>
+ <cell>net</cell>
+ <cell>clk_a_ibuf_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.335</cell>
+ <cell>2.268</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.166</cell>
+ <cell>2.434</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>I_2/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.357</cell>
+ <cell>2.791</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.058</cell>
+ <cell>2.849</cell>
+ <cell>16</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.581</cell>
+ <cell>3.430</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.201</cell>
+ <cell>3.631</cell>
+ <cell>4</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/wptr_bin_next_1.CO1:A</cell>
+ <cell>net</cell>
+ <cell>u_fifo/fifo_full</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.370</cell>
+ <cell>4.001</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/wptr_bin_next_1.CO1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.051</cell>
+ <cell>4.052</cell>
+ <cell>5</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_fifo/wptr_gray_next_0_a2[1]:B</cell>
+ <cell>net</cell>
+ <cell>u_fifo/CO1_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.083</cell>
+ <cell>4.135</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_fifo/wptr_gray_next_0_a2[1]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.091</cell>
+ <cell>4.226</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r_2_NE_0:C</cell>
+ <cell>net</cell>
+ <cell>u_fifo/wptr_gray_next[1]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.376</cell>
+ <cell>4.602</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r_2_NE_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.090</cell>
+ <cell>4.692</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r_2_NE_i:D</cell>
+ <cell>net</cell>
+ <cell>u_fifo/full_r_2_NE_0_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.154</cell>
+ <cell>4.846</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r_2_NE_i:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.247</cell>
+ <cell>5.093</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r:D</cell>
+ <cell>net</cell>
+ <cell>u_fifo/full_r_2_NE_i_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.024</cell>
+ <cell>5.117</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5.117</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_a</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>10.000</cell>
+ <cell>10.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_a</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>10.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_a_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>clk_a</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>10.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_a_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>1.145</cell>
+ <cell>11.145</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_IOBA:A</cell>
+ <cell>net</cell>
+ <cell>clk_a_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.370</cell>
+ <cell>11.515</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_IOBA:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.176</cell>
+ <cell>11.691</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2:A</cell>
+ <cell>net</cell>
+ <cell>clk_a_ibuf_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.305</cell>
+ <cell>11.996</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.151</cell>
+ <cell>12.147</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>I_2/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.323</cell>
+ <cell>12.470</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.049</cell>
+ <cell>12.519</cell>
+ <cell>16</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.515</cell>
+ <cell>13.034</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clock reconvergence pessimism</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.396</cell>
+ <cell>13.430</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>u_fifo/full_r:D</cell>
+ <cell>Library setup time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.000</cell>
+ <cell>13.430</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>13.430</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Setup</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Setup (ns)</cell>
+ <cell>External Setup (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>din_valid</cell>
+ <cell>u_fifo/full_r:D</cell>
+ <cell>3.575</cell>
+ <cell></cell>
+ <cell>3.575</cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.541</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>din_valid</cell>
+ <cell>u_regfile/regs[7][6]:EN</cell>
+ <cell>3.381</cell>
+ <cell></cell>
+ <cell>3.381</cell>
+ <cell></cell>
+ <cell>0.136</cell>
+ <cell>0.508</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>din_valid</cell>
+ <cell>u_regfile/regs[7][5]:EN</cell>
+ <cell>3.381</cell>
+ <cell></cell>
+ <cell>3.381</cell>
+ <cell></cell>
+ <cell>0.136</cell>
+ <cell>0.508</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>din_valid</cell>
+ <cell>u_regfile/regs[7][3]:EN</cell>
+ <cell>3.365</cell>
+ <cell></cell>
+ <cell>3.365</cell>
+ <cell></cell>
+ <cell>0.136</cell>
+ <cell>0.492</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>din_valid</cell>
+ <cell>u_regfile/regs[7][0]:EN</cell>
+ <cell>3.365</cell>
+ <cell></cell>
+ <cell>3.365</cell>
+ <cell></cell>
+ <cell>0.136</cell>
+ <cell>0.492</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: din_valid</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: u_fifo/full_r:D</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>3.575</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>din_valid</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>din_valid_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>din_valid</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>din_valid_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>1.322</cell>
+ <cell>1.322</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>din_valid_ibuf/U_IOIN:YIN</cell>
+ <cell>net</cell>
+ <cell>din_valid_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>1.322</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>din_valid_ibuf/U_IOIN:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOIN_IB_E</cell>
+ <cell>+</cell>
+ <cell>0.346</cell>
+ <cell>1.668</cell>
+ <cell>17</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/wptr_bin_next_1.CO1:B</cell>
+ <cell>net</cell>
+ <cell>din_valid_c</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.690</cell>
+ <cell>2.358</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/wptr_bin_next_1.CO1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.156</cell>
+ <cell>2.514</cell>
+ <cell>5</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/wptr_gray_next_0_a2[1]:B</cell>
+ <cell>net</cell>
+ <cell>u_fifo/CO1_0</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.080</cell>
+ <cell>2.594</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/wptr_gray_next_0_a2[1]:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.090</cell>
+ <cell>2.684</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r_2_NE_0:C</cell>
+ <cell>net</cell>
+ <cell>u_fifo/wptr_gray_next[1]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.376</cell>
+ <cell>3.060</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r_2_NE_0:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.090</cell>
+ <cell>3.150</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r_2_NE_i:D</cell>
+ <cell>net</cell>
+ <cell>u_fifo/full_r_2_NE_0_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.154</cell>
+ <cell>3.304</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r_2_NE_i:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG4</cell>
+ <cell>+</cell>
+ <cell>0.247</cell>
+ <cell>3.551</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r:D</cell>
+ <cell>net</cell>
+ <cell>u_fifo/full_r_2_NE_i_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.024</cell>
+ <cell>3.575</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>3.575</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_a</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_a</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_a_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>clk_a</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_a_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>1.145</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_IOBA:A</cell>
+ <cell>net</cell>
+ <cell>clk_a_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.370</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_IOBA:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.176</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2:A</cell>
+ <cell>net</cell>
+ <cell>clk_a_ibuf_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.305</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.151</cell>
+ <cell>N/C</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>I_2/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.323</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.049</cell>
+ <cell>N/C</cell>
+ <cell>16</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.515</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/full_r:D</cell>
+ <cell>Library setup time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET Clock to Output</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET clk_b to clk_a</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Register to Asynchronous</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET External Recovery</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Recovery (ns)</cell>
+ <cell>External Recovery (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>reset_n</cell>
+ <cell>u_fifo/wq2_rptr_gray[1]:ALn</cell>
+ <cell>2.679</cell>
+ <cell></cell>
+ <cell>2.679</cell>
+ <cell></cell>
+ <cell>0.196</cell>
+ <cell>-0.159</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>reset_n</cell>
+ <cell>u_fifo/wq2_rptr_gray[0]:ALn</cell>
+ <cell>2.679</cell>
+ <cell></cell>
+ <cell>2.679</cell>
+ <cell></cell>
+ <cell>0.196</cell>
+ <cell>-0.159</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>reset_n</cell>
+ <cell>u_fifo/wq1_rptr_gray[1]:ALn</cell>
+ <cell>2.679</cell>
+ <cell></cell>
+ <cell>2.679</cell>
+ <cell></cell>
+ <cell>0.196</cell>
+ <cell>-0.159</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>reset_n</cell>
+ <cell>u_fifo/wptr_gray[3]:ALn</cell>
+ <cell>2.678</cell>
+ <cell></cell>
+ <cell>2.678</cell>
+ <cell></cell>
+ <cell>0.196</cell>
+ <cell>-0.160</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>reset_n</cell>
+ <cell>u_fifo/full_r:ALn</cell>
+ <cell>2.678</cell>
+ <cell></cell>
+ <cell>2.678</cell>
+ <cell></cell>
+ <cell>0.196</cell>
+ <cell>-0.160</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: reset_n</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: u_fifo/wq2_rptr_gray[1]:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>2.679</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>reset_n</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_n_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>reset_n</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_n_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>1.318</cell>
+ <cell>1.318</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_n_ibuf/U_IOIN:YIN</cell>
+ <cell>net</cell>
+ <cell>reset_n_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>1.318</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_n_ibuf/U_IOIN:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOIN_IB_E</cell>
+ <cell>+</cell>
+ <cell>0.346</cell>
+ <cell>1.664</cell>
+ <cell>100</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/wq2_rptr_gray[1]:ALn</cell>
+ <cell>net</cell>
+ <cell>reset_n_c</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.015</cell>
+ <cell>2.679</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.679</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_a</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_a</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_a_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>clk_a</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_a_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>1.145</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_IOBA:A</cell>
+ <cell>net</cell>
+ <cell>clk_a_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.370</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_IOBA:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.176</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2:A</cell>
+ <cell>net</cell>
+ <cell>clk_a_ibuf_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.305</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.151</cell>
+ <cell>N/C</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>I_2/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.323</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_2/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.049</cell>
+ <cell>N/C</cell>
+ <cell>16</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_fifo/wq2_rptr_gray[1]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_1</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.515</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/wq2_rptr_gray[1]:ALn</cell>
+ <cell>Library recovery time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.196</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET Asynchronous to Register</name>
+<text>No Path</text>
+</section>
+</section>
+<section>
+<name>Clock Domain clk_b</name>
+<text></text>
+<section>
+<name>SET Register to Register</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Setup (ns)</cell>
+ <cell>Minimum Period (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>u_fifo/mem_mem_0_0/R_DATA_3_inst:CLK</cell>
+ <cell>u_monitor/peak[6]:EN</cell>
+ <cell>1.756</cell>
+ <cell>5.077</cell>
+ <cell>5.109</cell>
+ <cell>10.186</cell>
+ <cell>0.128</cell>
+ <cell>1.923</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>u_fifo/mem_mem_0_0/R_DATA_3_inst:CLK</cell>
+ <cell>u_monitor/peak[2]:EN</cell>
+ <cell>1.756</cell>
+ <cell>5.077</cell>
+ <cell>5.109</cell>
+ <cell>10.186</cell>
+ <cell>0.128</cell>
+ <cell>1.923</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>u_fifo/mem_mem_0_0/R_DATA_3_inst:CLK</cell>
+ <cell>u_monitor/peak[0]:EN</cell>
+ <cell>1.756</cell>
+ <cell>5.077</cell>
+ <cell>5.109</cell>
+ <cell>10.186</cell>
+ <cell>0.128</cell>
+ <cell>1.923</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>u_fifo/mem_mem_0_0/R_DATA_3_inst:CLK</cell>
+ <cell>u_monitor/peak[3]:EN</cell>
+ <cell>1.755</cell>
+ <cell>5.078</cell>
+ <cell>5.108</cell>
+ <cell>10.186</cell>
+ <cell>0.128</cell>
+ <cell>1.922</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>u_fifo/mem_mem_0_0/R_DATA_3_inst:CLK</cell>
+ <cell>u_monitor/peak[1]:EN</cell>
+ <cell>1.755</cell>
+ <cell>5.078</cell>
+ <cell>5.108</cell>
+ <cell>10.186</cell>
+ <cell>0.128</cell>
+ <cell>1.922</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: u_fifo/mem_mem_0_0/R_DATA_3_inst:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: u_monitor/peak[6]:EN</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>10.186</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>5.109</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5.077</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_b</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_b</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_b_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>clk_b</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_b_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>1.322</cell>
+ <cell>1.322</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_IOBA:A</cell>
+ <cell>net</cell>
+ <cell>clk_b_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.397</cell>
+ <cell>1.719</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_IOBA:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.140</cell>
+ <cell>1.859</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1:A</cell>
+ <cell>net</cell>
+ <cell>clk_b_ibuf_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.331</cell>
+ <cell>2.190</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.166</cell>
+ <cell>2.356</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>I_1/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.358</cell>
+ <cell>2.714</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.058</cell>
+ <cell>2.772</cell>
+ <cell>37</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_fifo/mem_mem_0_0/R_DATA_3_inst:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_2</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.581</cell>
+ <cell>3.353</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/mem_mem_0_0/R_DATA_3_inst:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.209</cell>
+ <cell>3.562</cell>
+ <cell>3</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_monitor/peak5_cry_3:A</cell>
+ <cell>net</cell>
+ <cell>fifo_rdata[3]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.583</cell>
+ <cell>4.145</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_monitor/peak5_cry_3:P</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ARI1_CC</cell>
+ <cell>+</cell>
+ <cell>0.051</cell>
+ <cell>4.196</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_monitor/peak5_cry_0_CC_0:P[4]</cell>
+ <cell>net</cell>
+ <cell>NET_CC_CONFIG11</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.015</cell>
+ <cell>4.211</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_monitor/peak5_cry_0_CC_0:CC[9]</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CC_CONFIG</cell>
+ <cell>+</cell>
+ <cell>0.332</cell>
+ <cell>4.543</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_monitor/peak5_cry_7_FCINST1:CC</cell>
+ <cell>net</cell>
+ <cell>NET_CC_CONFIG34</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>4.543</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_monitor/peak5_cry_7_FCINST1:CO</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:FCEND_BUFF_CC</cell>
+ <cell>+</cell>
+ <cell>0.062</cell>
+ <cell>4.605</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_monitor/peak_0_sqmuxa:B</cell>
+ <cell>net</cell>
+ <cell>u_monitor/peak5</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.226</cell>
+ <cell>4.831</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_monitor/peak_0_sqmuxa:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:CFG3</cell>
+ <cell>+</cell>
+ <cell>0.053</cell>
+ <cell>4.884</cell>
+ <cell>8</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_monitor/peak[6]:EN</cell>
+ <cell>net</cell>
+ <cell>u_monitor/peak_0_sqmuxa_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.225</cell>
+ <cell>5.109</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>5.109</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_b</cell>
+ <cell>Clock Constraint</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>7.000</cell>
+ <cell>7.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_b</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>7.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_b_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>clk_b</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>7.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_b_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>1.145</cell>
+ <cell>8.145</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_IOBA:A</cell>
+ <cell>net</cell>
+ <cell>clk_b_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.361</cell>
+ <cell>8.506</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_IOBA:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.121</cell>
+ <cell>8.627</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1:A</cell>
+ <cell>net</cell>
+ <cell>clk_b_ibuf_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.302</cell>
+ <cell>8.929</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.151</cell>
+ <cell>9.080</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>I_1/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.323</cell>
+ <cell>9.403</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.049</cell>
+ <cell>9.452</cell>
+ <cell>37</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_monitor/peak[6]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_2</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.519</cell>
+ <cell>9.971</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clock reconvergence pessimism</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.343</cell>
+ <cell>10.314</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>u_monitor/peak[6]:EN</cell>
+ <cell>Library setup time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.128</cell>
+ <cell>10.186</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>10.186</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET External Setup</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Clock to Output</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Clock to Out (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>u_monitor/dout[2]:CLK</cell>
+ <cell>dout[2]</cell>
+ <cell>5.120</cell>
+ <cell></cell>
+ <cell>8.475</cell>
+ <cell></cell>
+ <cell>8.475</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>u_monitor/status[1]:CLK</cell>
+ <cell>status[1]</cell>
+ <cell>5.077</cell>
+ <cell></cell>
+ <cell>8.429</cell>
+ <cell></cell>
+ <cell>8.429</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>u_monitor/dout[0]:CLK</cell>
+ <cell>dout[0]</cell>
+ <cell>5.064</cell>
+ <cell></cell>
+ <cell>8.420</cell>
+ <cell></cell>
+ <cell>8.420</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>u_monitor/dout_valid:CLK</cell>
+ <cell>dout_valid</cell>
+ <cell>5.047</cell>
+ <cell></cell>
+ <cell>8.402</cell>
+ <cell></cell>
+ <cell>8.402</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>u_monitor/dout[6]:CLK</cell>
+ <cell>dout[6]</cell>
+ <cell>5.050</cell>
+ <cell></cell>
+ <cell>8.402</cell>
+ <cell></cell>
+ <cell>8.402</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: u_monitor/dout[2]:CLK</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: dout[2]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>8.475</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_b</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_b</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_b_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>clk_b</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_b_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>1.322</cell>
+ <cell>1.322</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_IOBA:A</cell>
+ <cell>net</cell>
+ <cell>clk_b_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.397</cell>
+ <cell>1.719</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_IOBA:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.140</cell>
+ <cell>1.859</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1:A</cell>
+ <cell>net</cell>
+ <cell>clk_b_ibuf_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.331</cell>
+ <cell>2.190</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.166</cell>
+ <cell>2.356</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>I_1/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.358</cell>
+ <cell>2.714</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.058</cell>
+ <cell>2.772</cell>
+ <cell>37</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_monitor/dout[2]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_2</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.583</cell>
+ <cell>3.355</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_monitor/dout[2]:Q</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>+</cell>
+ <cell>0.190</cell>
+ <cell>3.545</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>dout_obuf[2]/U_IOTRI:D</cell>
+ <cell>net</cell>
+ <cell>dout_c[2]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.843</cell>
+ <cell>4.388</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>dout_obuf[2]/U_IOTRI:DOUT</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOTRI_OB_EB</cell>
+ <cell>+</cell>
+ <cell>0.969</cell>
+ <cell>5.357</cell>
+ <cell>1</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>dout_obuf[2]/U_IOPAD:D</cell>
+ <cell>net</cell>
+ <cell>dout_obuf[2]/DOUT</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>5.357</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>dout_obuf[2]/U_IOPAD:PAD</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_TRI</cell>
+ <cell>+</cell>
+ <cell>3.118</cell>
+ <cell>8.475</cell>
+ <cell>0</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>dout[2]</cell>
+ <cell>net</cell>
+ <cell>dout[2]</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>8.475</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>8.475</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_b</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>dout[2]</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>f</cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>slow_lv_ht</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET clk_a to clk_b</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET Register to Asynchronous</name>
+<text>No Path</text>
+</section>
+<section>
+<name>SET External Recovery</name>
+<table>
+<header>
+ <cell/>
+ <cell>From</cell>
+ <cell>To</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Slack (ns)</cell>
+ <cell>Arrival (ns)</cell>
+ <cell>Required (ns)</cell>
+ <cell>Recovery (ns)</cell>
+ <cell>External Recovery (ns)</cell>
+ <cell>Operating Conditions</cell>
+</header>
+<row>
+ <cell>Path 1</cell>
+ <cell>reset_n</cell>
+ <cell>u_fifo/rq1_wptr_gray[3]:ALn</cell>
+ <cell>2.433</cell>
+ <cell></cell>
+ <cell>2.433</cell>
+ <cell></cell>
+ <cell>0.197</cell>
+ <cell>-0.081</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+<row>
+ <cell>Path 2</cell>
+ <cell>reset_n</cell>
+ <cell>u_fifo/mem_mem_0_0/R_DATA_0_inst:ALn</cell>
+ <cell>2.369</cell>
+ <cell></cell>
+ <cell>2.369</cell>
+ <cell></cell>
+ <cell>0.218</cell>
+ <cell>-0.128</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+<row>
+ <cell>Path 3</cell>
+ <cell>reset_n</cell>
+ <cell>u_fifo/mem_mem_0_0/R_DATA_3_inst:ALn</cell>
+ <cell>2.368</cell>
+ <cell></cell>
+ <cell>2.368</cell>
+ <cell></cell>
+ <cell>0.218</cell>
+ <cell>-0.129</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+<row>
+ <cell>Path 4</cell>
+ <cell>reset_n</cell>
+ <cell>u_fifo/mem_mem_0_0/R_DATA_2_inst:ALn</cell>
+ <cell>2.368</cell>
+ <cell></cell>
+ <cell>2.368</cell>
+ <cell></cell>
+ <cell>0.218</cell>
+ <cell>-0.129</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+<row>
+ <cell>Path 5</cell>
+ <cell>reset_n</cell>
+ <cell>u_fifo/mem_mem_0_0/R_DATA_1_inst:ALn</cell>
+ <cell>2.368</cell>
+ <cell></cell>
+ <cell>2.368</cell>
+ <cell></cell>
+ <cell>0.218</cell>
+ <cell>-0.129</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+</table>
+<text></text>
+<section><name>Expanded Path 1</name></section>
+<table>
+<header>
+ <cell>Pin Name</cell>
+ <cell>Type</cell>
+ <cell>Net Name</cell>
+ <cell>Cell Name</cell>
+ <cell>Op</cell>
+ <cell>Delay (ns)</cell>
+ <cell>Total (ns)</cell>
+ <cell>Fanout</cell>
+ <cell>Edge</cell>
+</header>
+<row>
+ <cell>From: reset_n</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>To: u_fifo/rq1_wptr_gray[3]:ALn</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data required time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>-</cell>
+ <cell></cell>
+ <cell>2.433</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>slack</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data arrival time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>reset_n</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_n_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>reset_n</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>0.000</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_n_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>1.145</cell>
+ <cell>1.145</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_n_ibuf/U_IOIN:YIN</cell>
+ <cell>net</cell>
+ <cell>reset_n_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>1.145</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>reset_n_ibuf/U_IOIN:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOIN_IB_E</cell>
+ <cell>+</cell>
+ <cell>0.279</cell>
+ <cell>1.424</cell>
+ <cell>100</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/rq1_wptr_gray[3]:ALn</cell>
+ <cell>net</cell>
+ <cell>reset_n_c</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>1.009</cell>
+ <cell>2.433</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>data arrival time</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>2.433</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Data required time calculation</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_b</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>N/C</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+ <cell>clk_b</cell>
+ <cell>Clock source</cell>
+ <cell></cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_b_ibuf/U_IOPAD:PAD</cell>
+ <cell>net</cell>
+ <cell>clk_b</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.000</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>clk_b_ibuf/U_IOPAD:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:IOPAD_IN</cell>
+ <cell>+</cell>
+ <cell>0.994</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_IOBA:A</cell>
+ <cell>net</cell>
+ <cell>clk_b_ibuf/YIN</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.348</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_IOBA:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:ICB_CLKINT</cell>
+ <cell>+</cell>
+ <cell>0.118</cell>
+ <cell>N/C</cell>
+ <cell>1</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1:A</cell>
+ <cell>net</cell>
+ <cell>clk_b_ibuf_Z</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.276</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:GB</cell>
+ <cell>+</cell>
+ <cell>0.154</cell>
+ <cell>N/C</cell>
+ <cell>2</cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_RGB1:A</cell>
+ <cell>net</cell>
+ <cell>I_1/U0_Y</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.304</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>I_1/U0_RGB1:Y</cell>
+ <cell>cell</cell>
+ <cell></cell>
+ <cell>ADLIB:RGB</cell>
+ <cell>+</cell>
+ <cell>0.048</cell>
+ <cell>N/C</cell>
+ <cell>37</cell>
+ <cell>f</cell>
+</row>
+<row>
+ <cell>u_fifo/rq1_wptr_gray[3]:CLK</cell>
+ <cell>net</cell>
+ <cell>NN_2</cell>
+ <cell></cell>
+ <cell>+</cell>
+ <cell>0.469</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell>r</cell>
+</row>
+<row>
+ <cell>u_fifo/rq1_wptr_gray[3]:ALn</cell>
+ <cell>Library recovery time</cell>
+ <cell></cell>
+ <cell>ADLIB:SLE</cell>
+ <cell>-</cell>
+ <cell>0.197</cell>
+ <cell>N/C</cell>
+ <cell></cell>
+ <cell></cell>
+</row>
+<row>
+</row>
+<row>
+ <cell>Operating Conditions</cell>
+ <cell>slow_lv_lt</cell>
+</row>
+</table>
+</section>
+<section>
+<name>SET Asynchronous to Register</name>
+<text>No Path</text>
+</section>
+</section>
+<section>
+<name>Path Set Pin to Pin</name>
+<section>
+<name>SET Input to Output</name>
+<text>No Path</text>
+</section>
+</section>
+<section>
+<name>Path Set User Sets</name>
+</section>
+</doc>

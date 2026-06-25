@@ -1,0 +1,53 @@
+This evidence package accompanies the manuscript "Evidence-Gated STRIDE
+Threat Modeling for FPGA Development Toolchains" and is released under the
+following terms.
+
+================================================================================
+Data and documentation
+================================================================================
+The data and documentation in this package -- CSV, JSON, and Markdown files,
+the artifact manifest, hashes, per-record dispositions, and the synthetic
+fixtures authored for this study -- are licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+  https://creativecommons.org/licenses/by/4.0/
+
+You are free to share and adapt this material for any purpose, provided you
+give appropriate credit to the authors and the associated manuscript.
+
+================================================================================
+Source code
+================================================================================
+The source code in this package (Python, PowerShell, and Tcl scripts) is
+licensed under the MIT License:
+
+MIT License
+
+Copyright (c) 2026 Jiho Shin, Moohong Min, Aram Kim
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+Third-party material
+================================================================================
+Third-party material is NOT relicensed by this package. Vendor documentation,
+vendor-generated project outputs, and third-party source trees are not
+redistributed here. Public repositories examined in the evaluation remain under
+their own upstream licenses and are referenced by pinned commit identifier and
+SHA-256 digest rather than copied into this package.

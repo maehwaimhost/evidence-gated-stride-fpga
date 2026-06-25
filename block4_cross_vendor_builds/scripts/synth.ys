@@ -1,0 +1,3 @@
+read_verilog REPO_ROOT/block4_builds/picorv32/scripts/quartus/system.v
+read_verilog REPO_ROOT/block4_builds/picorv32/picorv32.v
+synth_ecp5 -top system -json REPO_ROOT/block4_builds/picorv32_ecp5/picorv32_ecp5.json

@@ -1,0 +1,17 @@
+stage,status,detail
+project_create,ok,PolarFire MPF100T FCG484 project created
+source_import,ok,HDL and SDC loaded
+SYNTHESIZE,ok,SYNTHESIZE completed
+PLACEROUTE,ok,PLACEROUTE completed
+VERIFYTIMING,ok,VERIFYTIMING completed
+GENERATEPROGRAMMINGDATA,ok,GENERATEPROGRAMMINGDATA completed
+GENERATEPROGRAMMINGFILE,ok,GENERATEPROGRAMMINGFILE completed
+export_bitstream,ok,programming files exported
+project_create_b,ok,PolarFire MPF100T FCG484 project created
+source_import_b,ok,HDL and SDC loaded
+SYNTHESIZE_b,ok,SYNTHESIZE completed
+PLACEROUTE_b,ok,PLACEROUTE completed
+VERIFYTIMING_b,ok,VERIFYTIMING completed
+GENERATEPROGRAMMINGDATA_b,ok,GENERATEPROGRAMMINGDATA completed
+GENERATEPROGRAMMINGFILE_b,ok,GENERATEPROGRAMMINGFILE completed
+export_bitstream_b,ok,programming files exported

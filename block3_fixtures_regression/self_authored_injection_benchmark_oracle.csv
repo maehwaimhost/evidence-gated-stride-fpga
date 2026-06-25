@@ -1,0 +1,9 @@
+﻿injection_id,case_name,description,expected_threat_ids,failed_or_missing_checks,detected_threat_ids,oracle_status
+IB-1,hdl_digest_mismatch,HDL source differs from the release manifest digest.,SIP-2; RPT-2,source_digest_match,RPT-2; SIP-2,expected_detected
+IB-2,constraint_digest_mismatch,Constraint file differs from the release manifest digest.,CFG-1; RPT-2,constraint_digest_match,CFG-1; RPT-2,expected_detected
+IB-3,tool_option_drift,Tool option snapshot differs from the release manifest digest.,CFG-2; TENV-3,tool_options_digest_match,CFG-2; TENV-3,expected_detected
+IB-4,report_digest_mismatch,Timing report differs from the release manifest digest.,RPT-1; RPT-2,report_digest_match,RPT-1; RPT-2,expected_detected
+IB-5,stale_bitstream_rollback,Bitstream placeholder differs from the release manifest digest.,BSD-1; RPT-2,bitstream_digest_match,BSD-1; RPT-2,expected_detected
+IB-6,unauthorized_release,Release package omits approval and attestation evidence.,BSD-3; REL-2,release_approval_present; release_attestation_present,BSD-3; REL-2,expected_detected
+IB-7,wrong_target_programming,Programming log target differs from the release manifest target.,BSD-4; DEP-1,target_match,BSD-4; DEP-1,expected_detected
+IB-8,missing_readback_status,Programming log exists but readback/status evidence is absent.,DEP-1,readback_status_present,DEP-1,expected_detected

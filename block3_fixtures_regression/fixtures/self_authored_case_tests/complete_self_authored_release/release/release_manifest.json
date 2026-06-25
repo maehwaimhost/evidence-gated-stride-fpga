@@ -1,0 +1,7 @@
+{
+  "bitstream_sha256": "a2f5bcff139e6a59de0e49baf9fd36139028112ec40ef9f4528812369b5b8a50",
+  "build_id": "SA-1-build",
+  "constraint_sha256": "90028dd34282e4fe78be4d8de2c16273e1a72b6e45d5eaebea9530cf60af370d",
+  "package": "complete_self_authored_release",
+  "source_sha256": "a653b295bd792e4978eb8bc40f6337de4620b1cae3c7f55a8056141e289ab5b8"
+}

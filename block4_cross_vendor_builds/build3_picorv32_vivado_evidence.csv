@@ -1,0 +1,10 @@
+# Build 3 — PicoRV32 'system' via Vivado 2025.2, Artix-7 xc7a35ticsg324-1L, board-less FULL impl
+# repo YosysHQ/picorv32 @ 87c89acc ; write_bitstream SUCCESS; timing MET; DRC 0 errors
+# NOTE: the Vivado/AMD build uses PicoRV32's repo-defined 'system' top
+#       (same core as Build 2 -> cross-vendor demo).
+# unconstrained I/O (no board): UCIO/NSTD DRC downgraded to Warning. firmware.hex=4096 NOP.
+sha256,bytes,artifact
+7913FBB2733E68D06C51893B04D0FEFA0C6E32ED4F47A73DFDBEBD584C420F73,2192131,picorv32_viv.bit
+C8C46A1073885F2BDC83BA96019FB16F0FE2E5122421B4EB039614A4C926C717,732585,picorv32_viv_routed.dcp
+7AE6CD7B235D648FE444EB57D92F88CC3369A2FFFCA3FE3D2E74F66A7F2F64F8,8754,vivado_utilization.rpt
+7D28B094E977427BC5C00257FA91F249B54AAC322FEA0902ABC558CC5950BDC0,17833,vivado_timing.rpt

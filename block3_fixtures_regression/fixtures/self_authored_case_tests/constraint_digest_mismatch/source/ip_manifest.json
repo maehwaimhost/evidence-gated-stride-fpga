@@ -1,0 +1,7 @@
+{
+  "author": "self-authored case test",
+  "components": [
+    "top.v"
+  ],
+  "license": "paper-owned test fixture"
+}

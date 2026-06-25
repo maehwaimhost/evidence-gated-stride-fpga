@@ -1,0 +1,7 @@
+Block-4 build — Icicle Kit reference design
+repo: polarfire-soc/icicle-kit-reference-design  commit: fd0aebb95776a726d3dc6d42c0dd7d0bec89d798
+tool: Libero SoC v2025.2  device: MPFS250T_ES (default die)
+entry: MPFS_ICICLE_KIT_REFERENCE_DESIGN.tcl
+SCRIPT_ARGS (official, '+'-separated): VERIFY_TIMING+GENERATE_PROGRAMMING_DATA
+excluded: PROGRAM (board), HSS_UPDATE (network)
+repo modification: NONE (driver/provenance/logs kept outside repo; project dir is build output)

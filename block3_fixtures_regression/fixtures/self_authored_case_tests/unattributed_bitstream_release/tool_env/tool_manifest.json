@@ -1,0 +1,5 @@
+{
+  "container_digest": "sha256:selfauthoredcase",
+  "eda_tool": "self-authored-placeholder-tool",
+  "tool_version": "0.0-case-test"
+}

@@ -1,0 +1,6 @@
+stage,status,detail
+environment,ok,Quartus Prime Shell
+project_create,ok,QPF/QSF project generated
+compile,ok,Quartus compile flow completed
+project_create_b,ok,QPF/QSF project generated
+compile_b,ok,Quartus compile flow completed

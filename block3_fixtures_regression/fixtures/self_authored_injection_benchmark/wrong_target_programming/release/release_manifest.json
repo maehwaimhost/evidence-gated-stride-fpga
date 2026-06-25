@@ -1,0 +1,9 @@
+{
+  "bitstream_sha256": "6881bfd3525a0905892fa6105bbd261670ef5ad04a47344e053ca357762b743d",
+  "constraint_sha256": "822800beb3b1f61974fd0fbc5e01e00afff7f8549fdaf68e31fbab179593194b",
+  "release_version": "current",
+  "report_sha256": "d90e6bc86e5f49e47151a793baf38cf84ae1f9052ea280f7c8993045d8b8007d",
+  "source_sha256": "cdc5af690b16d2fa65e0e3589c1398bafcf94b2f3f4f6dfc63af89469a0ae4cf",
+  "target": "case-board-001",
+  "tool_options_sha256": "c37f62e465b9399cb7df67f81db91411d3d1f0e909311f3488183c1a0acb2c0a"
+}

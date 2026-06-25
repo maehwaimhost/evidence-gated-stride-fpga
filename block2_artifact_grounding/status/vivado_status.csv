@@ -1,0 +1,10 @@
+stage,status,detail
+environment,ok,Vivado 2025.2  part xc7a35tcpg236-1
+project_create,ok,XPR project  source files  sim files  and XDC constraints loaded
+synthesis,ok,synthesis checkpoint and reports generated; run_status=synth_design Complete!
+implementation,ok,placed-and-routed checkpoint and reports generated; run_status=route_design Complete!
+bitstream,ok,bitstream generated
+project_create_b,ok,XPR project  source files  sim files  and XDC constraints loaded
+synthesis_b,ok,synthesis checkpoint and reports generated; run_status=synth_design Complete!
+implementation_b,ok,placed-and-routed checkpoint and reports generated; run_status=route_design Complete!
+bitstream_b,ok,bitstream generated

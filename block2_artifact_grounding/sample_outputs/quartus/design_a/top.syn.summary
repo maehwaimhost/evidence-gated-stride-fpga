@@ -1,0 +1,9 @@
+Synthesis Status : Successful - Fri Jun 12 13:39:47 2026
+Revision Name : top
+Top-level Entity Name : top
+Family : Cyclone 10 GX
+Quartus Prime Version : 26.1.0 Build 110 03/26/2026 SC Pro Edition
+Device : 10CX220YU484E5G
+Logic utilization estimate (in ALMs) : 32 / 80,330 ( < 1 % )
+Total registers : 43
+Estimated DSP Blocks Post-Merging : 0

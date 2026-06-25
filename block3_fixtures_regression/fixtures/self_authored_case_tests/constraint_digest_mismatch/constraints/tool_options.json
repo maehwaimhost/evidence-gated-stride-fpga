@@ -1,0 +1,4 @@
+{
+  "synthesis_strategy": "case-test-default",
+  "target_device": "self-authored-fixture"
+}

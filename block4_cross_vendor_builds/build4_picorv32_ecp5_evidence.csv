@@ -1,0 +1,8 @@
+# Build 4 — PicoRV32 'system' via oss-cad (Yosys+nextpnr-ecp5+ecppack), ECP5 LFE5U-85F CABGA381, board-less
+# repo YosysHQ/picorv32 @ 87c89acc ; flow yosys/nextpnr/ecppack all exit 0 -> ECP5 .bit
+# 4th vendor (Lattice) via fully-open toolchain, beyond the 3 audited vendors
+# 
+sha256,bytes,artifact
+162ED7F9D30A33EB961B8426572F39F5855869F24FA47FB848534E49F9D4DA37,1946269,picorv32_ecp5.bit
+B0B5B4EF406A61B9E268A628E4DB3B9C8278819AD30C297A11F2D263E07D4882,3612394,picorv32_ecp5.json
+6BE5D658B301A9B6B00B6B4FA95BC1365A3F8FD6008CB0503A1C78F1B9610F7B,936469,picorv32_ecp5.config

@@ -1,0 +1,10 @@
+Cross-vendor artifact-provenance evaluation started: 2026-06-12T13:35:09.7336981+09:00
+BEGIN vivado 2026-06-12T13:35:09.7650364+09:00
+END vivado exit=0 2026-06-12T13:39:33.4211596+09:00
+BEGIN quartus 2026-06-12T13:39:33.4211596+09:00
+END quartus exit=0 2026-06-12T13:42:25.1559178+09:00
+BEGIN libero 2026-06-12T13:42:25.1559178+09:00
+END libero exit=0 2026-06-12T13:49:15.9366145+09:00
+BEGIN collect_evidence 2026-06-12T13:49:15.9366145+09:00
+END collect_evidence exit=0 2026-06-12T13:49:29.2968647+09:00
+Cross-vendor artifact-provenance evaluation ended: 2026-06-12T13:49:29.2968647+09:00

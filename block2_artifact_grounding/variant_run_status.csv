@@ -1,0 +1,7 @@
+variant_id,vendor,run_status,status_file
+"hdl_revision","AMD Vivado","ok","REPO_ROOT\cross_vendor_variant_runtime\hdl_revision\results\vivado\vivado_status.csv"
+"hdl_revision","Intel Quartus Prime Pro","ok","REPO_ROOT\cross_vendor_variant_runtime\hdl_revision\results\quartus\quartus_status.csv"
+"hdl_revision","Microchip Libero SoC","ok","REPO_ROOT\cross_vendor_variant_runtime\hdl_revision\results\libero\libero_status.csv"
+"constraint_revision","AMD Vivado","ok","REPO_ROOT\cross_vendor_variant_runtime\constraint_revision\results\vivado\vivado_status.csv"
+"constraint_revision","Intel Quartus Prime Pro","ok","REPO_ROOT\cross_vendor_variant_runtime\constraint_revision\results\quartus\quartus_status.csv"
+"constraint_revision","Microchip Libero SoC","ok","REPO_ROOT\cross_vendor_variant_runtime\constraint_revision\results\libero\libero_status.csv"
